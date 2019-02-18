@@ -1,0 +1,42 @@
+{
+  "name": "@allex/composite-key-weakmap",
+  "version": "1.0.0",
+  "description": "A map for weakly holding nested references.",
+  "jsnext:main": "lib/index.esm.js",
+  "module": "lib/index.esm.js",
+  "main": "lib/index.js",
+  "types": "lib/CompositeKeyWeakMap.d.ts",
+  "repository": "allex/composite-key-weakmap",
+  "keywords": [
+    "composite",
+    "key-value",
+    "weakmap"
+  ],
+  "scripts": {
+    "precommit": "npm run lint && npm test",
+    "lint": "tslint -p tsconfig.json src/**/*.ts ./*.js",
+    "lint:fix": "tslint -p tsconfig.json src/**/*.ts ./*.js --fix",
+    "build": "npm run lint && rollup-worker -c",
+    "prepare": "npm run build"
+  },
+  "author": "allex <allex.wxn@gmail.com> (http://iallex.com/)",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@allex/typescript": "next",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.5.4",
+    "husky": "^1.1.2",
+    "mkdirp": "^0.5.1",
+    "mocha": "^5.2.0",
+    "rimraf": "^2.6.1",
+    "rollup-plugin-typescript2": "^0",
+    "ts-mockito": "^2.3.0",
+    "ts-node": "^7.0.0",
+    "tslint": "5.11.0"
+  },
+  "license": "MIT",
+  "files": [
+    "lib/"
+  ]
+}
